@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../src/output.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overflow-clip">
+        <div class="w-[86%] m-auto min-w-[354.32px] relative">
+            <div class="flex items-center mt-3">
+                <header>
+                    <h1 class="text-[2rem]">SHIN's</h1>
+                </header>
+                <nav class="absolute right-0 md:hidden">
+                    <img src="../src/assets/burger.svg" width="24" alt="">
+                </nav>
+                <nav class="right-0 hidden md:block absolute">
+                    <p class="uppercase text-[.8rem]">Login | Sign Up</p>
+                </nav>
+            </div>
+            <div class="flex items-center mt-5 relative">
+                <input class="rounded-full shadow-md shadow-[#D7D1D1] border-[1.5px] outline-none tracking-wider text-center border-[#D7D1D1] m-auto w-[52.5%] h-[48px] p-5 placeholder:text-center" type="text" placeholder="Search">
+                <div class="absolute flex right-0">
+                    <a href="">
+                        <img class="" src="../src/assets/shop.svg" width="24" alt="">
+                    </a>
+                    <a href="">
+                        <img class="" src="../src/assets/bookmark.svg" width="24" alt="">
+                    </a>
+                </div>
+            </div>
+            <section class="mt-5">
+                <div>
+                    <div class="flex justify-center *:px-3 text-[#474343] divide-x-2 divide-[#474343]/40">
+                        <a href="">Men</a>
+                        <a href="">Women</a>
+                        <a href="">Featured</a>
+                        <a href="">Sports</a>
+                        <a href="">Kids</a>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-[31px]">
+                <p class="text-[1.1rem]">Featured</p>
+                <div class="hidden md:block">
+                    <button onclick="prev()">prev</button>
+                    <button onclick="next()">next</button>
+                </div>
+                <div class="flex md:overflow-hidden gap-4 md:w-[663px] m-auto overflow-x-scroll items-center snap-x snap-mandatory">
+                    <!-- empty -->
+                    <div class="item md:block shrink-0 h-[292px] w-full ">
+                    </div>                  
+                    <div class="item md:block shrink-0 h-[292px] w-full ">
+                    </div>    
+                    <!-- items -->
+                    <div class="item overflow-clip rounded-[20px] snap-center bg-[#D9D9D9] shrink-0 h-[292px] w-full ">
+                        <img class="hover:scale-105 object-fit w-full h-full " src="../src/assets/1.avif" alt="">
+                    </div>                  
+                    <div class="item overflow-clip rounded-[20px] snap-center bg-[#D9D9D9] shrink-0 h-[292px] md:h-[275px] w-full md:w-[201px] ">
+                        <img class="hover:scale-105 object-fit w-full h-full " src="../src/assets/1.avif" alt="">
+                    </div>                  
+                    <div class="item overflow-clip rounded-[20px] snap-center bg-[#D9D9D9] shrink-0 h-[292px] md:h-[275px] w-full md:w-[201px] ">
+                        <img class="hover:scale-105 object-fit w-full h-full " src="../src/assets/1.avif" alt="">
+                    </div>                  
+                    <div class="item overflow-clip rounded-[20px] snap-center bg-[#D9D9D9] shrink-0 h-[292px] md:h-[275px] w-full md:w-[201px] ">
+                        <img class="hover:scale-105 object-fit w-full h-full " src="../src/assets/1.avif" alt="">
+                    </div>                  
+                    <div class="item overflow-clip rounded-[20px] snap-center bg-[#D9D9D9] shrink-0 h-[292px] md:h-[275px] w-full md:w-[201px] ">
+                        <img class="hover:scale-105 object-fit w-full h-full " src="../src/assets/1.avif" alt="">
+                    </div>                  
+                    <div class="item overflow-clip rounded-[20px] snap-center bg-[#D9D9D9] shrink-0 h-[292px] md:h-[275px] w-full md:w-[201px] ">
+                        <img class="hover:scale-105 object-fit w-full h-full " src="../src/assets/1.avif" alt="">
+                    </div>                  
+                    <div class="item overflow-clip rounded-[20px] snap-center bg-[#D9D9D9] shrink-0 h-[292px] md:h-[275px] w-full md:w-[201px] ">
+                        <img class="hover:scale-105 object-fit w-full h-full " src="../src/assets/1.avif" alt="">
+                    </div>         
+                    <!-- empty -->
+                    <div class="item md:block shrink-0 h-[292px] w-full">
+                    </div>                  
+                    <div class="item md:block shrink-0 h-[292px] w-full">
+                    </div>                  
+                </div>
+                <div class="flex gap-[5px] justify-center sm:hidden">
+                    <div class="w-[12px] h-[12px] rounded-full bg-[#D9D9D9]"></div>
+                    <div class="w-[12px] h-[12px] rounded-full bg-[#D9D9D9]"></div>
+                    <div class="w-[12px] h-[12px] rounded-full bg-[#D9D9D9]"></div>
+                </div>
+            </section>
+            <section class="mt-[38px]">
+                <div class="m-auto bg-[#FFEEEE] min-w-[354px] min-h-[244px] sm:h-[290px] md:h-[310px] lg:h-[350px] xl:h-[390px] 2xl:h-[430px] box-content transition-all ease-linear duration-75 sm:w-[100%] rounded-[20px] relative overflow-clip">
+                    <div class="w-[100%] h-[100%]">
+                        <div class="w-[85px] h-[85px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[140px] lg:h-[140px] rounded-full bg-[#d9d9d9] absolute top-[4%] left-[1.4%]"></div>
+                        <div class="w-[111px] h-[103px] sm:w-[126px] sm:h-[118px] md:w-[141px] md:h-[133px] lg:w-[161px] lg:h-[153px] rounded-full bg-[#d9d9d9] absolute -right-10 -top-4"></div>
+                        <div class="w-[105px] h-[95px] sm:w-[120px] sm:h-[110px] md:w-[140px] md:h-[130px] lg:w-[160px] lg:h-[160px] rounded-full bg-[#d9d9d9] absolute left-[30%] top-[30%] blur"></div>
+                        <div class="w-[60px] h-[56px] sm:w-[75px] sm:h-[71px] md:w-[90px] md:h-[86px] lg:w-[105px] lg:h-[101px] rounded-full bg-[#d9d9d9] absolute right-[13%] sm:right-[22%] xl:right-[24%] xl:bottom-[25%] bottom-[26%]"></div>
+                        <div class="w-[66px] h-[55px] sm:w-[86px] sm:h-[75px] md:w-[106px] md:h-[95px] lg:w-[126px] lg:h-[115px] rounded-full bg-[#d9d9d9] absolute left-[6%] blur-[6px] -bottom-[5%]"></div>
+                    </div>
+                    <div class="absolute top-[7%] w-[100%] h-[84%]">
+                        <div class="flex flex-col items-center h-[100%]">
+                            <p class="text-[1.1rem]">x-QbC23</p>
+                            <div class="mt-[30px] font-passion text-[9.5vw] text-center leading-10 sm:leading-[3.5rem] md:leading-[4rem] lg:leading-[5rem] xl:leading-[5.9rem] 2xl:leading-[6.5rem] text-[#654444]">
+                                <h2>GET IN THE</h2>
+                                <h2>GAME</h2>
+                            </div>
+                            <button class="text-[#524F45] bg-[#D0CDAC] absolute bottom-0 py-2 mt-[44px] w-[136px] h-[45px] rounded-full font-medium border-2 border-[#868270] text-[20px]"><a href="#shop">Shop Now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-[41px]" id="shop">
+                <p class="text-[1.1rem]">Shop</p>
+                <div class="p-[4px] grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                    <div class="w-full h-[225px] rounded-[20px] bg-[#D9D9D9]">
+                    </div>
+                    <div class="w-full h-[225px] rounded-[20px] bg-[#D9D9D9]">
+                    </div>
+                    <div class="w-full h-[225px] rounded-[20px] bg-[#D9D9D9]">
+                    </div>
+                    <div class="w-full h-[225px] rounded-[20px] bg-[#D9D9D9]">
+                    </div>
+                    <div class="w-full h-[225px] rounded-[20px] bg-[#D9D9D9]">
+                    </div>
+                    <div class="w-full h-[225px] rounded-[20px] bg-[#D9D9D9]">
+                    </div>
+                </div>
+            </section>
+            <footer class="grid grid-cols-1 text-center mt-[40px] sm:grid-cols-2 md:grid-cols-4">
+                <div class="m-[34px_34px_12px]">
+                    <h3 class="text-[1.5rem]">Men’s Shoes</h3>
+                    <ul>
+                        <li>Dress Shoes</li>
+                        <li>Casual Shoes</li>
+                        <li>Boots</li>
+                        <li>Sandals & Flip-flops</li>
+                        <li>Formal Shoes</li>
+                    </ul>
+                </div>
+                <div class="m-[34px_34px_12px]">
+                    <h3 class="text-[1.5rem]">Women’s Shoes</h3>
+                    <ul>
+                        <li>Heels</li>
+                        <li>Flats</li>
+                        <li>Boots</li>
+                        <li>Sandals</li>
+                        <li>Casual Shoes</li>
+                        <li>Formal Shoes</li>
+                    </ul>
+                </div>
+                <div class="m-[34px_34px_12px]">
+                    <h3 class="text-[1.5rem]">Kids’ Shoes</h3>
+                    <ul>
+                        <li>Sneakers</li>
+                        <li>Loafers</li>
+                        <li>Boots </li>
+                        <li>Sandals</li>
+                        <li>Sneakers</li>
+                        <li>Mary Janes</li>
+                        <li>Ballet Flats</li>
+                    </ul>
+                </div>
+                <div class="m-[34px_34px_12px]">
+                    <h3 class="text-[1.5rem]">Athletic Shoes</h3>
+                    <ul>
+                        <li>Road Running</li> 
+                        <li>Trail Running </li>
+                        <li>High-top Basketball</li> 
+                        <li>Low-top Basketball</li>
+                        <li>Clay Court </li>
+                        <li>Grass Court </li>
+                        <li>Cross-training </li>
+                        <li>Weightlifting </li>
+                        <li>Road Cycling </li>
+                        <li>Spiked Golf </li>
+                        <li>Firm Ground Cleats</li>
+                        <li>Low Hiking</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <div class="bg-[#D9D9D9] h-[10px] mt-[40px] min-w-[400px]"></div>
+    </div>
+    <script src="../src/js/carousel.js" type="module"></script>
+</body>
+</html>
